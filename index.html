@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting to your Amazon Store...</title>
+    <script>
+      var lang = navigator.language || navigator.userLanguage;
+
+      if (lang.includes("IN")) { // India
+        window.location.href = "https://www.amazon.in/dp/B0FD41BDF4";
+      } else if (lang.includes("US") || lang.includes("en-US")) { // USA
+        window.location.href = "https://www.amazon.com/dp/B0FD41BDF4";
+      } else if (lang.includes("UK") || lang.includes("GB") || lang.includes("en-GB")) { // UK
+        window.location.href = "https://www.amazon.co.uk/dp/B0FD41BDF4";
+      } else if (lang.includes("FR") || lang.includes("fr-FR")) { // France
+        window.location.href = "https://www.amazon.fr/dp/B0FD41BDF4";
+      } else if (lang.includes("CA") || lang.includes("en-CA")) { // Canada
+        window.location.href = "https://www.amazon.ca/dp/B0FD41BDF4";
+      } else if (lang.includes("DE") || lang.includes("de-DE")) { // Germany
+        window.location.href = "https://www.amazon.de/dp/B0FD41BDF4";
+      } else if (lang.includes("JP") || lang.includes("ja-JP")) { // Japan
+        window.location.href = "https://www.amazon.co.jp/dp/B0FD41BDF4";
+      } else if (lang.includes("AU") || lang.includes("en-AU")) { // Australia
+        window.location.href = "https://www.amazon.com.au/dp/B0FD41BDF4";
+      } else if (lang.includes("IT") || lang.includes("it-IT")) { // Italy
+        window.location.href = "https://www.amazon.it/dp/B0FD41BDF4";
+      } else if (lang.includes("ES") || lang.includes("es-ES")) { // Spain
+        window.location.href = "https://www.amazon.es/dp/B0FD41BDF4";
+      } else if (lang.includes("NL") || lang.includes("nl-NL")) { // Netherlands
+        window.location.href = "https://www.amazon.nl/dp/B0FD41BDF4";
+      } else if (lang.includes("BR") || lang.includes("pt-BR")) { // Brazil
+        window.location.href = "https://www.amazon.com.br/dp/B0FD41BDF4";
+      } else if (lang.includes("MX") || lang.includes("es-MX")) { // Mexico
+        window.location.href = "https://www.amazon.com.mx/dp/B0FD41BDF4";
+      } else {
+        // Default redirect to USA
+        window.location.href = "https://www.amazon.com/dp/B0FD41BDF4";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to your nearest Amazon store...</p>
+  </body>
+</html>
+
